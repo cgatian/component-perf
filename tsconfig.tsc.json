@@ -13,8 +13,7 @@
     "lib": [
       "es2016",
       "dom"
-    ],
-    "outDir": "./final"
+    ]
   },
   "exclude": [
     "node_modules",

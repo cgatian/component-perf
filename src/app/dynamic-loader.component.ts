@@ -38,7 +38,7 @@ export class DynamicComponentLoader {
     private injector: Injector,
     private viewRef: ViewContainerRef,
   ) {
-    System.import('../../out/src/app/lazy-module/lazy.module.ngfactory.js').then((moduleFactories: any) => {
+    System.import('../../out/src/app/lazy-module/lazy.module.ngfactory.ts').then((moduleFactories: any) => {
      // const compType = moduleFactories['HelloWorldComponentNgFactory'].componentType;
       const moduleFactory: NgModuleFactory<any> = moduleFactories['LazyModuleNgFactory'];
       const moduleRef = moduleFactory.create(injector);
