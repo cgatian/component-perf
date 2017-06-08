@@ -9,7 +9,18 @@ exports.config = {
     './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    'browserName': 'chrome'
+    browserName: 'chrome',
+    chromeOptions: {
+      //Important for benchpress to get timeline data from the browser
+      'args': ['--js-flags=--expose-gc'],
+      'perfLoggingPrefs': {
+        'enableNetwork': true,
+        'traceCategories': 'v8,blink.console,devtools.timeline'
+      }
+    },
+    loggingPrefs: {
+      performance: 'ALL'
+    }
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
@@ -17,9 +28,9 @@ exports.config = {
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () { }
   },
-  beforeLaunch: function() {
+  beforeLaunch: function () {
     require('ts-node').register({
       project: 'e2e/tsconfig.e2e.json'
     });

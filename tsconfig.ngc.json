@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noEmit": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "declaration": true,
+    "stripInternal": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "./src/app/lazy-module/lazy.module.ts"
+  ],
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": false,
+    "genDir": "./out"
+  }
+}

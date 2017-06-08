@@ -140,6 +140,10 @@
     magic-string "^0.19.0"
     source-map "^0.5.6"
 
+"@types/core-js@^0.9.41":
+  version "0.9.41"
+  resolved "https://srv-proget2.onbase.net/npm/phoenix/@types/core-js/-/core-js-0.9.41.tgz#cfeceb63c2beaa29f882252c7c18e0e9471ff4e2"
+
 "@types/jasmine@2.5.38":
   version "2.5.38"
   resolved "https://srv-proget2.onbase.net/npm/phoenix/@types/jasmine/-/jasmine-2.5.38.tgz#a4379124c4921d4e21de54ec74669c9e9b356717"
@@ -580,15 +584,15 @@ binary@^0.3.0:
     buffers "~0.1.1"
     chainsaw "~0.1.0"
 
-bl@^1.0.0, bl@~1.1.2:
-  version "1.1.2"
-  resolved "https://srv-proget2.onbase.net/npm/phoenix/bl/-/bl-1.1.2.tgz#fdca871a99713aa00d19e3bbba41c44787a65398"
+bl@^1.0.0, bl@~1.0.0:
+  version "1.0.3"
+  resolved "https://srv-proget2.onbase.net/npm/phoenix/bl/-/bl-1.0.3.tgz#fc5421a28fd4226036c3b3891a66a25bc64d226e"
   dependencies:
     readable-stream "~2.0.5"
 
-bl@~1.0.0:
-  version "1.0.3"
-  resolved "https://srv-proget2.onbase.net/npm/phoenix/bl/-/bl-1.0.3.tgz#fc5421a28fd4226036c3b3891a66a25bc64d226e"
+bl@~1.1.2:
+  version "1.1.2"
+  resolved "https://srv-proget2.onbase.net/npm/phoenix/bl/-/bl-1.1.2.tgz#fdca871a99713aa00d19e3bbba41c44787a65398"
   dependencies:
     readable-stream "~2.0.5"
 

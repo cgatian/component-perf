@@ -1,5 +1,6 @@
 import { browser, element, by } from 'protractor';
 
+
 export class ComponentPerfPage {
   navigateTo() {
     return browser.get('/');
