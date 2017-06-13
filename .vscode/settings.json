@@ -1,0 +1,6 @@
+{
+    "vsicons.associations.files": [
+        { "icon": "webpack",  "extensions": [".perf.ts"], "filename": true, "format": "svg" }
+    ],
+    "vsicons.presets.angular": true
+  }

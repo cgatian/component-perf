@@ -10,9 +10,11 @@ exports.config = {
   ],
   capabilities: {
     browserName: 'chrome',
+
+    //https://sites.google.com/a/chromium.org/chromedriver/capabilities
     chromeOptions: {
       //Important for benchpress to get timeline data from the browser
-      'args': ['--js-flags=--expose-gc'],
+      'args': ['--incognito','--js-flags=--expose-gc'],
       'perfLoggingPrefs': {
         'enableNetwork': true,
         'traceCategories': 'v8,blink.console,devtools.timeline'
@@ -34,6 +36,9 @@ exports.config = {
     require('ts-node').register({
       project: 'e2e/tsconfig.e2e.json'
     });
+  },
+  afterLaunch: function (code) {
+    return jasmine.getEnv().outputResults();
   },
   onPrepare() {
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));

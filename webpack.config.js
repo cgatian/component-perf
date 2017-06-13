@@ -21,6 +21,13 @@ const deployUrl = "";
 
 module.exports = {
   "devtool": "source-map",
+  "devServer": {
+    compress: true,
+    headers: {
+      "Cache-Control": "no-cache, no-store, must-revalidate",
+      "Pragma": "no-cache"
+    }
+  },
   "resolve": {
     "extensions": [
       ".ts",
@@ -190,7 +197,7 @@ module.exports = {
     ]
   },
   "plugins": [
- //   new UglifyWebpackPlugin(),
+    //new UglifyWebpackPlugin(),
     new NoEmitOnErrorsPlugin(),
     new GlobCopyWebpackPlugin({
       "patterns": [

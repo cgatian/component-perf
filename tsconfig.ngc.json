@@ -19,11 +19,11 @@
   "exclude": [
     "node_modules"
   ],
-  "files": [
-    "./src/app/lazy-module/lazy.module.ts"
+  "include": [
+     "./src/app/perf-modules/*.ts"
   ],
   "angularCompilerOptions": {
     "skipTemplateCodegen": false,
-    "genDir": "./out"
+    "genDir": "./.tmp"
   }
 }
